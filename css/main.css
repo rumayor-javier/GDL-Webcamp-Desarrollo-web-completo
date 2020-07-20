@@ -379,25 +379,12 @@ h1 {
 
 .barra-navegacion {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .logo img {
-    width: 80%;
-    display: inline-block;
-}
-
-@media (min-width: 768px) {
-    .logo img {
-        width: 70%;
-    }
-    .barra .contenedor {
-        display: flex;
-    }
-}
-
-.menu-movil i {
-    width: 100%;
-    display: inline-block;
+    display: block;
 }
 
 
@@ -423,8 +410,6 @@ h1 {
 @media (min-width: 768px) {
     .navegacion-principal {
         display: flex;
-        width: 60%;
-        align-content: right;
     }
     .navegacion-principal a {
         padding: .5rem .5rem;
