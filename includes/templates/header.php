@@ -76,7 +76,7 @@
                 </div>
                 <nav class="navegacion-principal">
                     <a href="conferencias.php">Conferencias</a>
-                    <a href="#">Calendario</a>
+                    <a href="calendario.php">Calendario</a>
                     <a href="#">Invitados</a>
                     <a href="registro.php">Reservaciones</a>
                 </nav>
