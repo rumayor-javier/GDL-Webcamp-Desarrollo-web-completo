@@ -11,7 +11,7 @@
 
 /*=================================================================================================================*/
 
-                $sql = " SELECT evento_id, nombre_evento, fecha_evento, hora_evento, cat_evento, nombre_invitado, apellido_invitado ";
+                $sql = " SELECT evento_id, nombre_evento, fecha_evento, hora_evento, cat_evento, icono, nombre_invitado, apellido_invitado ";
                 $sql .= " FROM eventos ";
 
 /*Aplicamos los JOIN para relazinar las tablas de la BD===========================================================*/
@@ -54,6 +54,7 @@
                         'fecha' => $eventos['fecha_evento'],
                         'hora' => $eventos['hora_evento'],
                         'categoria' => $eventos['cat_evento'],
+                        'icono' => 'fa' . " " . $eventos['icono'],
                         'invitado' => $eventos['nombre_invitado'] . " " . $eventos['apellido_invitado']
                     );
                 
@@ -73,14 +74,27 @@
                         setlocale(LC_TIME, 'spanish');
                          echo strftime( "%d de %B del %Y", strtotime($dia)); ?>
                     </h3>
-                <?php } ?>
+
+                    <div class="contenedor-calendario">
+            <?php
+                foreach($lista_eventos as $evento) { ?>
+                        <div class="dia">
+                            <p class="titulo"><?php echo $evento['titulo']; ?> </p>
+                            <p class="hora">
+                                <i class="fa fa-clock" aria-hidden="true"></i> 
+                                <?php echo $evento['fecha'] . " " . $evento['hora']; ?>
+                            </p>
+                            <p><i class="<?php echo $evento['icono']; ?>" aria-hidden="true"></i>
+                            <?php echo $evento['categoria']; ?></p>
+                            <p><i class="fa fa-user" aria-hidden="true"></i>
+                            <?php echo $evento['invitado']; ?>
+                            </p>
+                        </div>
+
             
-
-            <pre>
-                        <?php var_dump($calendario); 
-                        ?>        
-            </pre>
-
+            <?php } //fin for each eventos ?>
+            <?php } //fin for each de dias ?>
+            </div>
         </div>
 
 <!--Siempre que se realize una consulta a la BD debemos cerrar la conexion para evitar consumo indeseado de datos=====-->

@@ -1195,6 +1195,81 @@ div.extras div.orden {
 }
 
 
+/** Calendario **/
+
+.calendario::after {
+    clear: both;
+    display: block;
+    content: '';
+}
+
+.calendario h3 {
+    width: 100%;
+    display: inline-block;
+    background-color: var(--naranja);
+    color: white;
+    margin-bottom: 0;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.calendario h3 i {
+    margin-right: 1rem;
+}
+
+.dia {
+    width: 50%;
+    float: left;
+    border: 2px solid #e1e1e1;
+    margin-right: -4px;
+    height: 15rem;
+}
+
+@media (min-width: 768px) {
+    .dia {
+        width: 33.2%;
+        min-height: 16rem;
+        padding-top: 2rem;
+        margin-right: -3px;
+    }
+    .dia .titulo {
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        font-weight: bold;
+        text-align: center;
+    }
+    .dia .hora {
+        font-size: 1rem;
+    }
+    .dia i {
+        color: var(--naranja);
+        font-size: 1.3rem;
+    }
+}
+
+.dia:hover {
+    background-color: #e1e1e1;
+}
+
+.dia .titulo {
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+}
+
+.dia .hora {
+    font-size: .9rem;
+}
+
+.dia i {
+    color: var(--naranja);
+    font-size: .8rem;
+}
+
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
