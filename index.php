@@ -82,50 +82,7 @@
     </section>
     <!--Programa-->
 
-    <section class="contenedor seccion">
-
-        <h2 class="separador">Nuestros Invitados</h2>
-
-        <div class="lista-invitados">
-
-            <div class="invitado">
-                <img src="img/invitado1.jpg" alt="Imagen Invitado">
-                <p class="nombre">Rafael Bautista</p>
-            </div>
-
-
-            <div class="invitado">
-                <img src="img/invitado2.jpg" alt="Imagen Invitado">
-                <p class="nombre">Shari Herrera</p>
-            </div>
-
-
-            <div class="invitado">
-                <img src="img/invitado3.jpg" alt="Imagen Invitado">
-                <p class="nombre">Gregorio Sanchez</p>
-            </div>
-
-
-            <div class="invitado">
-                <img src="img/invitado4.jpg" alt="Imagen Invitado">
-                <p class="nombre">Susana Rivera</p>
-            </div>
-
-
-            <div class="invitado">
-                <img src="img/invitado5.jpg" alt="Imagen Invitado">
-                <p class="nombre">Harold Garcia</p>
-            </div>
-
-
-            <div class="invitado">
-                <img src="img/invitado6.jpg" alt="Imagen Invitado">
-                <p class="nombre">Susan Sanchez</p>
-            </div>
-
-        </div>
-
-    </section>
+    <?php include_once 'includes/templates/invitados.php'; ?>
 
     <div class="contador parallax">
         <div class="contenedor">
