@@ -2,7 +2,8 @@
 
     <section class="seccion contenedor">
         <h2 class="separador">La mejor conferencia de diseño web en español</h2>
-        <p>Aliquam eget tristique ex. Aliquam tempor lobortis commodo. Sed porta placerat dictum. Pellentesque euismod enim vel ligula scelerisque feugiat. Pellentesque id ex quis nunc rutrum hendrerit nec ac enim. </p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem ducimus molestias harum quas asperiores temporibus. Nostrum dignissimos placeat ipsum aut! Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem numquam animi atque non iusto modi minima, fugit velit voluptatum id. Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo blanditiis inventore laborum repellendus nam numquam voluptatibus, eaque tenetur illo consectetur enim odio corporis ullam alias nobis, earum asperiores ab doloremque? Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque laboriosam distinctio cupiditate! Laudantium vel explicabo suscipit quis, mollitia rerum tempore tempora natus, deleniti ex distinctio atque at dolore non. Voluptas, ratione maxime. Suscipit, corrupti doloremque! Quibusdam, adipisci! Quod omnis consequatur, dolore aliquam porro reprehenderit facere odio amet neque dolor deleniti harum dignissimos vel ipsa voluptates magni iste fugit explicabo id delectus ipsam non. At obcaecati earum laudantium odit voluptatum adipisci corporis quod molestiae error ut eius harum hic, quas dignissimos ipsum deleniti animi alias corrupti. Incidunt accusantium, itaque qui magni cupiditate molestias aperiam sunt molestiae quaerat quod! Culpa, commodi aliquid?
+             </p>
     </section>
 
     <section class="seccion contenedor">

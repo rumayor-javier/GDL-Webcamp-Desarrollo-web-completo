@@ -11,27 +11,27 @@
 
 /*=================================================================================================================*/
 
-                $sql = " SELECT evento_id, nombre_evento, fecha_evento, hora_evento, cat_evento, icono, nombre_invitado, apellido_invitado ";
-                $sql .= " FROM eventos ";
+                $sql = " SELECT `evento_id`, `nombre_evento`, `fecha_evento`, `hora_evento`, `cat_evento`, `icono`, `nombre_invitado`, `apellido_invitado` ";
+                $sql .= " FROM `eventos` ";;
 
 /*Aplicamos los JOIN para relazinar las tablas de la BD===========================================================*/
 
-                $sql .= " INNER JOIN categoria_evento ";
+                $sql .= " INNER JOIN `categoria_evento` ";;
                 $sql .= " ON eventos.id_cat_evento = categoria_evento.id_categoria ";
 
-                $sql .= " INNER JOIN invitados ";
+                $sql .= " INNER JOIN `invitados` ";
                 $sql .= " ON eventos.id_inv = invitados.invitado_id ";
 
 /*Aplicamos los JOIN para relazinar las tablas de la BD Fin=======================================================*/
 
 /*Aqui Ordenamos el array de eventos por su id====================================================================*/
 
-                $sql .= " ORDER BY evento_id ";
+                $sql .= " ORDER BY `evento_id` ";
 
 /*================================================================================================================*/
 
                 $resultado = $conn->query($sql);
-            } catch (\Exception $e) {
+            } catch (Exception $e) {
                 echo $e->getMessage();
             }
         ?>
@@ -65,8 +65,8 @@
 <!--Imprimimos datos de array usando un for each======================================================================-->
             <?php 
                 foreach($calendario as $dia => $lista_eventos) { ?>
-                    <h3>
-                        <i class="fa fa-calendar"></i>
+                    <h3 class="h3-calendario">
+                        <i class="far fa-calendar-alt"></i>
                         <?php
                         // Unix
                         setlocale(LC_TIME, 'es_ES.UTF-8');

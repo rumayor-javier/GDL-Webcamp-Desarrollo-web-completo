@@ -170,6 +170,12 @@ $(function() {
     //Plugin de estilos para textos https://github.com/davatron5000/Lettering.js
     $('.nombre-sitio').lettering();
 
+    //Agregar clase a menu
+
+    $('body.conferencias .navegacion-principal a:contains("Conferencia")').addClass('activo');
+    $('body.calendario .navegacion-principal a:contains("Calendario")').addClass('activo');
+    $('body.invitados .navegacion-principal a:contains("Invitados")').addClass('activo');
+
     //Menu fijo (detectar scroll en ventana)
 
     var windowHeight = $(window).height();
@@ -212,7 +218,7 @@ $(function() {
     $('.resumen-evento li:nth-child(4) p').animateNumber({ number: 9 }, 1500);
 
     //Plugin Cuenta regresiva http://hilios.github.io/jQuery.countdown/
-    $('.cuenta-regresiva').countdown('2020/12/25 00:00:00', function(event) {
+    $('.cuenta-regresiva').countdown('2020/12/9 09:00:00', function(event) {
         $('#dias').html(event.strftime('%D'));
         $('#horas').html(event.strftime('%H'));
         $('#minutos').html(event.strftime('%M'));
@@ -221,6 +227,11 @@ $(function() {
 
     //Colorbox
 
-    $('.invitado-info').colorbox({ inline: true, width: "40%" });
+    var invitadoInfo = document.getElementsByClassName('.invitado');
+
+    if (invitadoInfo) {
+        invitadoInfo.colorbox({ inline: true, width: "40%" });
+    }
+
 
 });

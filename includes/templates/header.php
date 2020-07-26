@@ -30,7 +30,7 @@
     <meta name="theme-color" content="#fafafa">
 </head>
 
-<body>
+<body class="<?php echo $pagina; ?>">
     <!--[if IE]>
     <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
   <![endif]-->
@@ -54,7 +54,7 @@
                 <div class="informacion-evento">
 
                     <div class="contenido-info-evento">
-                        <p class="fecha"><i class="far fa-calendar-alt"></i>10-12 Dic</p>
+                        <p class="fecha"><i class="far fa-calendar-alt"></i>9 - 11 Dic</p>
                         <p class="ciudad"><i class="fas fa-map-marker-alt"></i>Guadalajara, Jal</p>
                     </div>
 

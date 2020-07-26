@@ -372,7 +372,7 @@ h1 {
 }
 
 .barra {
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(0, 0, 0, 1);
     padding: .5rem 0;
 }
 
@@ -384,6 +384,18 @@ h1 {
 
 .logo img {
     display: block;
+}
+
+@media (min-width: 768px) {
+    .logo img {
+        max-width: 50%;
+    }
+}
+
+@media (min-width: 1300px) {
+    .logo img {
+        max-width: 100%;
+    }
 }
 
 
@@ -409,6 +421,7 @@ h1 {
 @media (min-width: 768px) {
     .navegacion-principal {
         display: flex;
+        justify-content: space-between;
     }
     .navegacion-principal a {
         padding: .5rem .5rem;
@@ -420,7 +433,7 @@ h1 {
 }
 
 .navegacion-principal a:last-child {
-    border: 3px var(--naranja) solid;
+    border: 2px var(--naranja) solid;
     color: var(--naranja);
     margin-right: 0;
 }
@@ -435,6 +448,10 @@ h1 {
 
 .navegacion-principal a:hover {
     background-color: var(--naranja);
+}
+
+.navegacion-principal .activo {
+    border-bottom: 2px solid var(--naranja);
 }
 
 
@@ -1173,10 +1190,6 @@ div.extras div.orden {
 
 /*Pagina conferencias*/
 
-.navegacion-principal .activo {
-    border-bottom: 5px solid var(--naranja);
-}
-
 .galeria-fotos a {
     display: inline-block;
     margin-bottom: 5px;
@@ -1203,7 +1216,7 @@ div.extras div.orden {
     content: '';
 }
 
-.calendario h3 {
+.h3-calendario {
     width: 100%;
     display: inline-block;
     background-color: var(--naranja);
