@@ -2,7 +2,7 @@
 
     <section class="seccion contenedor">
         <h2 class="separador">Registro de Usuarios</h2>
-        <form id="registro" class="registro" action="index.html" method="post">
+        <form id="registro" class="registro" action="validar_registro.php" method="post">
             <div id="datos_usuario" class="registro caja">
                 <div class="campo">
                     <label for="nombre">Nombre:</label>
@@ -39,7 +39,7 @@
                             </ul>
                             <div class="orden">
                                 <label for="pase_dia">Boletos deseados:</label>
-                                <input type="number" min="0" id="pase_dia" size="3" placeholder="0">
+                                <input type="number" min="0" id="pase_dia" size="3" name="boletos[]" placeholder="0">
                             </div>
                         </div>
                     </li>
@@ -58,7 +58,7 @@
                             </ul>
                             <div class="orden">
                                 <label for="pase_completo">Boletos deseados:</label>
-                                <input type="number" min="0" id="pase_completo" size="3" placeholder="0">
+                                <input type="number" min="0" id="pase_completo" size="3" name="boletos[]" placeholder="0">
                             </div>
                         </div>
                     </li>
@@ -77,7 +77,7 @@
                             </ul>
                             <div class="orden">
                                 <label for="pase_dosdias">Boletos deseados:</label>
-                                <input type="number" min="0" id="pase_dosdias" size="3" placeholder="0">
+                                <input type="number" min="0" id="pase_dosdias" size="3" name="boletos[]" placeholder="0">
                             </div>
                         </div>
                     </li>
@@ -167,21 +167,21 @@
                     <div class="extras">
                         <div class="orden">
                             <label for="camisa_evento">Camisa del evento $10 <small>(promocion 7% de dto.)</small></label>
-                            <input type="number" min="0" id="camisa_evento" size="3" placeholder="0">
+                            <input type="number" min="0" id="camisa_evento" size="3" name="pedido_camisas" placeholder="0">
                         </div>
                         <!--orden-->
                         <div class="orden">
                             <label for="etiquetas">Paquete de 10 etiquetas $2 <small>(HTML, CSS3, Javascript, Chrome)</small></label>
-                            <input type="number" min="0" id="etiquetas" size="3" placeholder="0">
+                            <input type="number" min="0" id="etiquetas" size="3" name="pedido_etiquetas" placeholder="0">
                         </div>
                         <!--orden-->
                         <div class="orden">
                             <label for="regalo">Seleccione un regalo</label></br>
-                            <select id="regalo" required>
+                            <select id="regalo" name="regalo" required>
                                 <option value="">-- Seleccione un regalo --</option>
-                                <option value="ETI">Etiquetas</option>
-                                <option value="PUL">Pulsera</option>
-                                <option value="PLU">Plumas</option>
+                                <option value="2">Etiquetas</option>
+                                <option value="1">Pulsera</option>
+                                <option value="3">Plumas</option>
                             </select>
                         </div>
                         <!--orden-->
@@ -197,7 +197,8 @@
                         <div id="suma-total">
 
                         </div>
-                        <input type="submit" id="btnRegistro" class="boton" value="Pagar">
+                        <input type="hidden" name="total_pedido" id="total_pedido" value="total_pedido">
+                        <input type="submit" id="btnRegistro" class="boton" name="submit" value="Pagar">
                     </div>
                     <!--total-->
                 </div>

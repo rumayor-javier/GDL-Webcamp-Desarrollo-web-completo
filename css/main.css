@@ -647,12 +647,17 @@ div.ocultar {
     }
 }
 
+.invitado-info {
+    width: 100%;
+}
+
 .invitado {
     position: relative;
     overflow: hidden;
 }
 
 .invitado img {
+    max-width: 100%;
     filter: gray;
     -webkit-filter: grayscale(1);
     transition: all .5s ease-in-out;
@@ -690,6 +695,14 @@ div.ocultar {
 .invitado:hover p {
     margin: -8rem 0;
     opacity: 0;
+}
+
+div.cboxElement {
+    text-align: center;
+}
+
+.cboxElement p {
+    padding: 20px;
 }
 
 
@@ -1284,10 +1297,6 @@ div.extras div.orden {
 
 
 /*Colorbox*/
-
-div.cboxElement {
-    padding: 3rem!important;
-}
 
 
 /* ==========================================================================

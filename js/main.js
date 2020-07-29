@@ -38,6 +38,8 @@
         var etiquetas = document.getElementById('etiquetas');
         var camisas = document.getElementById('camisa_evento');
 
+
+
         //mismo caso de uso de If's como en el del mapa
         if (nombre) {
             nombre.addEventListener('blur', validarCampos);
@@ -227,11 +229,6 @@ $(function() {
 
     //Colorbox
 
-    var invitadoInfo = document.getElementsByClassName('.invitado');
-
-    if (invitadoInfo) {
-        invitadoInfo.colorbox({ inline: true, width: "40%" });
-    }
-
+    $('.invitado-info').colorbox({ inline: true, width: "40%" });
 
 });
