@@ -31,13 +31,13 @@
         var calcular = document.getElementById('calcular');
         var errorDiv = document.getElementById('error');
         var botonRegistro = document.getElementById('btnRegistro');
+        botonRegistro.disabled = true;
         var lista_Productos = document.getElementById('lista-productos');
         var suma = document.getElementById('suma-total');
 
         //Extras
         var etiquetas = document.getElementById('etiquetas');
         var camisas = document.getElementById('camisa_evento');
-
 
 
         //mismo caso de uso de If's como en el del mapa
@@ -131,6 +131,9 @@
                     lista_Productos.innerHTML += listadoProductos[i] + '</br>';
                 }
                 suma.innerHTML = "$ " + totalPagar.toFixed(2);
+
+                botonRegistro.disabled = false;
+                document.getElementById('total_pedido').value = totalPagar;
             }
         }
 
@@ -230,5 +233,6 @@ $(function() {
     //Colorbox
 
     $('.invitado-info').colorbox({ inline: true, width: "40%" });
+
 
 });

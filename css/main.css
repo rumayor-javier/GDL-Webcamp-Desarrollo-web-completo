@@ -201,6 +201,10 @@ ul {
     border: 2px solid;
 }
 
+.boton:disabled {
+    opacity: 0.5;
+}
+
 .boton.hollow {
     background-color: #ffffff;
     color: var(--naranja);

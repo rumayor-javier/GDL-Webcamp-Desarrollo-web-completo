@@ -6,15 +6,15 @@
             <div id="datos_usuario" class="registro caja">
                 <div class="campo">
                     <label for="nombre">Nombre:</label>
-                    <input type="text" id="nombre" name="nombre" placeholder="Tu Nombre" required>
+                    <input type="text" id="nombre" name="nombre" placeholder="Tu Nombre" >
                 </div>
                 <div class="campo">
                     <label for="apellido">Apellidos:</label>
-                    <input type="text" id="apellido" name="apellido" placeholder="Tus Apellidos" required>
+                    <input type="text" id="apellido" name="apellido" placeholder="Tus Apellidos" >
                 </div>
                 <div class="campo">
                     <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" placeholder="Tu Email" required>
+                    <input type="email" id="email" name="email" placeholder="Tu Email" >
                 </div>
                 <div id="error"></div>
             </div>
@@ -197,8 +197,8 @@
                         <div id="suma-total">
 
                         </div>
-                        <input type="hidden" name="total_pedido" id="total_pedido" value="total_pedido">
-                        <input type="submit" id="btnRegistro" class="boton" name="submit" value="Pagar">
+                        <input type="hidden" name="total_pedido" id="total_pedido">
+                        <input id="btnRegistro" type="submit" class="boton" name="submit" value="Pagar">
                     </div>
                     <!--total-->
                 </div>
