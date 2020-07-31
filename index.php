@@ -6,13 +6,11 @@
     </section>
 
     <section class="programa">
-        <div class="contenedor-video">
-            <video class="centrar" muted autoplay loop poster="img/bg-talleres.jpg">
+            <video muted autoplay loop poster="img/bg-talleres.jpg">
             <source src="video/video.mp4" type="video/mp4"> 
             <source src="video/video.ogv" type="video/ogb"> 
             <source src="video/video.webm" type="video/webm"> 
             </video>
-        </div>
 
         <div class="contenido-rograma">
             <div class="contenedor">
@@ -236,7 +234,7 @@
         <div class="contenido-news contenedor">
             <p>Registrate y recibe todas las noticias del evento al instante</p>
             <h3>gdlwebcamp</h3>
-            <a href="#" class="boton transparente">Registro</a>
+            <a href="#mc_embed_signup" class="boton-newsletter boton transparente">Registro</a>
         </div>
     </div>
     <!--Contenido Newsletter Fin-->

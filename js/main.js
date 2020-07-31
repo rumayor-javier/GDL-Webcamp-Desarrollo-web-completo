@@ -30,7 +30,7 @@
         //Botones y divs
         var calcular = document.getElementById('calcular');
         var errorDiv = document.getElementById('error');
-        var botonRegistro = document.getElementById('btnRegistro');
+        var botonRegistro = $('btnRegistro');
         botonRegistro.disabled = true;
         var lista_Productos = document.getElementById('lista-productos');
         var suma = document.getElementById('suma-total');
@@ -233,6 +233,8 @@ $(function() {
     //Colorbox
 
     $('.invitado-info').colorbox({ inline: true, width: "40%" });
+    $('.boton-newsletter').colorbox({ inline: true, width: "60%" });
+
 
 
 });

@@ -499,20 +499,20 @@ h1 {
 
 /**Seccion programa evento**/
 
-.contenedor-video {
+.programa {
+    position: relative;
     overflow-x: hidden;
+    margin-bottom: 0;
 }
 
-.contenedor-video video {
-    height: 120vh;
+@media (min-width: 1200px) {
+    .programa video {
+        margin: 0 auto;
+    }
 }
 
 
 /**Cuadro Programa del evento**/
-
-.programa {
-    position: relative;
-}
 
 div.ocultar {
     display: none;
@@ -523,7 +523,6 @@ div.ocultar {
     top: 0;
     left: 0;
     bottom: 0;
-    height: 100%;
     width: 100%;
 }
 
