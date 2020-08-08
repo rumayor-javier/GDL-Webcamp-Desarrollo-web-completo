@@ -6,7 +6,7 @@
     </section>
 
     <section class="programa">
-            <video muted autoplay loop poster="img/bg-talleres.jpg">
+            <video class="video-programa" muted autoplay loop poster="img/bg-talleres.jpg">
             <source src="video/video.mp4" type="video/mp4"> 
             <source src="video/video.ogv" type="video/ogb"> 
             <source src="video/video.webm" type="video/webm"> 
